@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:black;
+  color:white;
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:60px;
+  background-color:#242526;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo{
+  width:40px;
+}
+
+.search-bar{
+  background-color:#3A3B3C;
+  border:none;
+  padding: 12px 14px;
+  border-radius:20px;
+  color: white;
+  outline:none;
+  font-size:14px;
+  width:180px;
+}
+
+.search-bar::placeholder{
+  color:white;
+}
+
+.nav-center{
+  display:flex;
+  gap:25px;
+}
+
+.nav-center-icons{
+  font-size:35px;;
+  padding: 10px;
+  border-radius:10px;
+  color:#b0b3b8;
+  cursor:pointer;
+  transition: background 0.2s;
+
+}
+
+.nav-center-icons:hover{
+  background-color:#3A3B3C;
+  color:#e4e6eb;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.nav-right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e4e6eb;
+    font-size: 28px;
+}
+
+.profile-pic {
+    background-color: #3A3B3C;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #3A3B3C;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+.story-container{
+  margin:auto;
+  margin-top:5rem;
+  display:flex;
+  gap:16px;
+  padding:20px;
+  background-color:#242526;
+  border-radius:12px;
+  max-width:750px;
+  justify-content:center;
+  height:210px;
+}
+
+.story{
+  width:130px;
+  height:200px;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+  transition: transform 0.3s ease;
+}
+
+.story:hover{
+  transform:scale(1.03);
+}
+
+.story-main-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:12px;
+  display:block;
+}
+
+.profile-pic-story{
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:3px solid #1877f2;
+  object-fit:cover;
+}
+
+.story-username{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  color:white;
+  font-size:14px;
+  font-weight:600;
+}
